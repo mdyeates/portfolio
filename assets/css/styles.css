@@ -13,6 +13,10 @@ hr {
     background-color: #35605a;
 }
 
+html {
+    scroll-padding-top: 4rem;
+}
+
 /* || HEADER & NAVIGATION */
 .header {
     display: flex;
@@ -21,7 +25,8 @@ hr {
     background-color: #fff;
     width: 100%;
     padding: 2rem;
-    position: fixed;
+    height: 3rem;
+    position: sticky;
     top: 0;
 }
 
@@ -39,6 +44,10 @@ hr {
     padding: 1.1rem;
 }
 
+.nav i {
+    padding: 0.8rem;
+}
+
 /* Header Pseudoclasses */
 .header a:visited{
     color: #35605a;
@@ -51,10 +60,10 @@ hr {
 }
 
 .header .all-nav a:hover {
-    text-decoration: underline;
     color: #303036;
     transition: 0.3s;
 }
+
 
 /* || NAME HERO */
 .name-position {
