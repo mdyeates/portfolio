@@ -98,8 +98,7 @@ hr {
 
 .header .all-nav .nav {
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 1.1rem;
+    padding: 1.0rem;
 }
 
 .header .all-nav .nav i {
@@ -156,7 +155,7 @@ hr {
 }
 
 .main-content .all-about .about .photo {
-    box-shadow: -20px 20px #35605a;
+    box-shadow: -40px 40px #35605a;
     opacity: 0.7;
     transition: 1s ease;
     margin-left: 3rem;
@@ -174,7 +173,8 @@ hr {
 .main-content .all-about .about .photo:hover {
     opacity: 1;
     transition: 1s ease;
-    box-shadow: -40px 40px #35605a;
+    box-shadow: -50px 50px #35605a;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* || PROJECTS */
@@ -244,11 +244,11 @@ hr {
 }
 
 .all-projects .project-img-right {
-    box-shadow: 20px 20px #35605a;
+    box-shadow: 40px 40px #35605a;
 }
 
 .all-projects .project-img-left {
-    box-shadow: -20px 20px #35605a;
+    box-shadow: -40px 40px #35605a;
 }
 
 /* Projects Pseudoclasses */
@@ -257,12 +257,14 @@ hr {
     opacity: 1;
     transition: 1s ease;
     box-shadow: 40px 40px #35605a;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .all-projects .project-img-left:hover {
     opacity: 1;
     transition: 1s ease;
     box-shadow: -40px 40px #35605a;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* || CONTACT */
@@ -275,6 +277,7 @@ hr {
     transition: 1s ease;
     margin-left: 15%;
     margin-right: 15%;
+    box-shadow: -40px 40px #303036;
 }
 
 .all-contact .contact-description {
@@ -290,11 +293,19 @@ hr {
 
 .input {
     background-color: transparent;
-    color:#fff;
+    outline: none;
+    border:#35605a 1px solid;
+    color: #fff;
+    font-size: 1rem;
     width: 450px;
     padding: 1rem;
     margin: 0.5rem;
     border-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input:focus {
+background-color: #456d68;
 }
 
 .button {
@@ -319,7 +330,7 @@ hr {
 .all-contact:hover {
     opacity: 1;
     transition: 1s ease;
-    box-shadow: -40px 40px #303036;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
