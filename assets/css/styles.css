@@ -1,4 +1,5 @@
 /* || RESETS */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,20 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+/* Design Lines */
+
 .header-line {
     margin: 0% 5%;
     border: none;
     height: 2px;
     background-color: #35605a;
 }
+
 hr {
     margin: 3% 5%;
     border: none;
@@ -19,12 +28,44 @@ hr {
     background-color: #35605a;
 }
 
-html {
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
+/* || HEADER STYLES */
+
+.name-position h1 {
+    color: #303036;
+    padding: 1.5rem;
+}
+
+.name-position h1 strong {
+    color:#35605a;
+}
+
+.main-content h2 {
+    font-size: 4rem;
+    padding-bottom: 3%;
+    text-align: center;
+    color: #303036;
+}
+
+.main-content h2 strong {
+    color:#35605a;
+}
+
+.all-projects .project-info h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #35605a;
+}
+
+.all-footer h4 {
+    font-size: 4rem;
+    padding-bottom: 3%;
+    text-align: center;
+    color:#fff;
+    padding-top: 5%;
 }
 
 /* || HEADER & NAVIGATION */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -52,11 +93,12 @@ html {
     padding: 1.1rem;
 }
 
-.nav i {
+.header .all-nav .nav i {
     padding: 0.8rem;
 }
 
 /* Header Pseudoclasses */
+
 .header a:visited{
     color: #35605a;
 }
@@ -84,15 +126,6 @@ html {
     justify-content: center;
 }
 
-.name-position h1 {
-    color: #303036;
-    padding: 1.5rem;
-}
-
-.name-position strong {
-    color:#35605a;
-}
-
 /* || MAIN SECTIONS */
 
 .all-about, .all-projects {
@@ -101,41 +134,35 @@ html {
 }
 
 /* About */
-.about {
+
+.main-content .all-about .about {
     display: flex;
     margin-bottom: 10%;
     height: 400px;
 }
 
-.photo {
+.main-content .all-about .about .photo {
     box-shadow: -20px 20px #35605a;
     opacity: 0.7;
     transition: 1s ease;
-}
-
-.photo:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: -40px 40px #35605a;
-
-}
-
-h2 {
-    font-size: 4rem;
-    padding-bottom: 3%;
-    text-align: center;
-    color: #303036;
-}
-
-h2 strong {
-    color:#35605a;
 }
 
 .all-about .about span {
     padding: 1rem;
 }
 
+/* About Pseudoclass */
+
+.main-content .all-about .about .photo:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: -40px 40px #35605a;
+}
+
 /* || PROJECTS */
+
+/* Projects Grid */
+
 #all-projects {
     display: grid;
     grid-template-rows: 500px 450px 350px;
@@ -176,63 +203,52 @@ h2 strong {
 
 }
 
-.project-img {
-    margin: 10%;
-    opacity: 0.7;
-    transition: 1s ease;
-}
-
-.project-img-right:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: 40px 40px #35605a;
-
-}
-
-.project-img-left:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: -40px 40px #35605a;
-}
-
-.project-img-right {
-    box-shadow: 20px 20px #35605a;
-}
-
-.project-img-left {
-    box-shadow: -20px 20px #35605a;
-
-}
-
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-info h3 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    color: #35605a;
-}
-
-
-.project-info-left {
-    text-align: right;
-}
+/* Projects Content */
 
 .all-projects {
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
 }
 
+.all-projects .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.all-projects .project-img {
+    margin: 10%;
+    opacity: 0.7;
+    transition: 1s ease;
+}
+
+.all-projects .project-img-right {
+    box-shadow: 20px 20px #35605a;
+}
+
+.all-projects .project-img-left {
+    box-shadow: -20px 20px #35605a;
+}
+
+/* Projects Pseudoclasses */
+
+.all-projects .project-img-right:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: 40px 40px #35605a;
+}
+
+.all-projects .project-img-left:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: -40px 40px #35605a;
+}
 
 /* || FOOTER */
-footer {
+
+.all-footer {
     background-color: #35605a;
     margin: 5%;
     border-top: none;
@@ -241,17 +257,8 @@ footer {
     transition: 1s ease;
 }
 
-footer:hover {
+.all-footer:hover {
     opacity: 1;
     transition: 1s ease;
     box-shadow: -40px 40px #303036;
-
-}
-
-h4 {
-    font-size: 4rem;
-    padding-bottom: 3%;
-    text-align: center;
-    color:#fff;
-    padding-top: 5%;
 }
