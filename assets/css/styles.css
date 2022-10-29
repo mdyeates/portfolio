@@ -21,6 +21,7 @@ hr {
 
 html {
     scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
 }
 
 /* || HEADER & NAVIGATION */
