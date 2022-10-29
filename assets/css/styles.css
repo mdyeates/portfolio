@@ -108,10 +108,14 @@ html {
 }
 
 .photo {
-    border-right: 5px solid #303036;
+    box-shadow: -20px 20px #35605a;
+    opacity: 0.7;
+    transition: 1s ease;
 }
 
-.all-about .about .photo {
+.photo:hover {
+    opacity: 1;
+    transition: 1s ease;
     box-shadow: -40px 40px #35605a;
 
 }
@@ -174,16 +178,30 @@ h2 strong {
 
 .project-img {
     margin: 10%;
+    opacity: 0.7;
+    transition: 1s ease;
 }
 
-.project-img-left {
-    box-shadow: -40px -40px #35605a;
-    border-right: solid 5px #303036;
+.project-img-right:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: 40px 40px #35605a;
+
+}
+
+.project-img-left:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: -40px 40px #35605a;
 }
 
 .project-img-right {
-    box-shadow: 40px 40px #35605a;
-    border-left: solid 5px #303036;
+    box-shadow: 20px 20px #35605a;
+}
+
+.project-img-left {
+    box-shadow: -20px 20px #35605a;
+
 }
 
 .project-info {
@@ -219,6 +237,13 @@ footer {
     margin: 5%;
     border-top: none;
     height: 582px;
+    opacity: 0.8;
+    transition: 1s ease;
+}
+
+footer:hover {
+    opacity: 1;
+    transition: 1s ease;
     box-shadow: -40px 40px #303036;
 
 }
