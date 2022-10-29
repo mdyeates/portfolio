@@ -270,14 +270,14 @@ hr {
 /* || CONTACT */
 
 .all-contact {
-    background-color: #35605a;
-    height: 500px auto;
-    margin-top: 5%;
+    background-color: #303036;
+    height: 400px auto;
+    margin-top: 4%;
     opacity: 0.8;
     transition: 1s ease;
     margin-left: 15%;
     margin-right: 15%;
-    box-shadow: -40px 40px #303036;
+    box-shadow: -40px 40px #35605a;
 }
 
 .all-contact .contact-description {
@@ -301,20 +301,20 @@ hr {
     padding: 1rem;
     margin: 0.5rem;
     border-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .input:focus {
-background-color: #456d68;
+background-color: #35605a;
 }
 
 .button {
     font-size: 1.3rem;
-    background-color: #35605a;
+    background-color: #303036;
     color: #fff;
     border-style: none;
     margin-top: 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 ::placeholder {
