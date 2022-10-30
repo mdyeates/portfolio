@@ -10,31 +10,17 @@
 html {
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    min-height: 100vh;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .my {
     color: #35605a;
-}
-
-/* Design Lines */
-
-.header-line {
-    margin: 0% 5%;
-    border: none;
-    height: 2px;
-    background-color: #35605a;
-}
-
-hr {
-    margin: 3% 5%;
-    border: none;
-    height: 2px;
-    background-color: #35605a;
 }
 
 /* || HEADER STYLES */
@@ -62,7 +48,7 @@ hr {
 .all-projects .project-info h3 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    color: #35605a;
+    color: #fff;
 }
 
 .all-contact h4 {
@@ -83,9 +69,19 @@ hr {
     width: 100%;
     padding: 2rem;
     height: 3rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+}
+
+.header:after {
+    content: "";
+    background: #35605a;
+    position: absolute;
+    bottom:0;
+    left: 5%;
+    height: 1px;
+    width: 90%;
 }
 
 .header .logo {
@@ -130,8 +126,8 @@ hr {
 /* || NAME HERO */
 .name-position {
     font-size: 2.5rem;
-    margin-top: 3%;
-    height: 600px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,31 +137,44 @@ hr {
 /* || MAIN SECTIONS */
 
 .all-about, .all-projects {
-    margin-left: 10%;
-    margin-right: 10%;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 100px;
+    margin-bottom: 4rem;
 }
 
 /* About */
 
+.all-about {
+    background-color: #fff;
+}
+
 .main-content .all-about .about {
     display: flex;
-    margin-bottom: 10%;
-    margin-top: 2rem;
-    height: 400px;
+    justify-content: center;
 }
 
 .main-content .all-about .about .photo {
     box-shadow: -40px 40px #35605a;
     opacity: 0.7;
+    height:500px;
     transition: 1s ease;
-    margin-left: 3rem;
+    margin-left: 80px;
 }
 
 .all-about .about .text {
     display: flex;
     align-items: center;
     padding: 2rem;
-    margin-left: 4rem;
+    color: #fff;
+    background-color: #303036;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 80px;
+    border-right: 10px solid #35605a;
+    border-top: 10px solid #35605a;
+
+
 }
 
 /* About Pseudoclass */
@@ -183,7 +192,8 @@ hr {
 
 #all-projects {
     display: grid;
-    grid-template-rows: 500px 450px 350px;
+    grid-template-rows: 30vw 25vw 25vw;
+    row-gap: 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     'project-info-one project-img-one'
@@ -224,10 +234,8 @@ hr {
 /* Projects Content */
 
 .all-projects {
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  position:relative;
+  padding: 50px;
 }
 
 
@@ -235,20 +243,51 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff;
+    background-color: #303036;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    position: absolute; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-top: 10px solid #35605a;
+}
+
+
+.all-projects .project-info-right {
+    margin-right: 80px;
+    position: absolute;
+    right: 20px;
+    border-right: 10px solid #35605a;
+
+}
+
+.all-projects .project-info-left {
+    margin-left: 80px;
+    position: absolute;
+    left: 20px;
+    border-left: 10px solid #35605a;
+
 }
 
 .all-projects .project-img {
-    margin: 10%;
     opacity: 0.7;
     transition: 1s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .all-projects .project-img-right {
     box-shadow: 40px 40px #35605a;
+    margin-right: 80px;
 }
 
 .all-projects .project-img-left {
     box-shadow: -40px 40px #35605a;
+    margin-left: 80px;
+   
 }
 
 /* Projects Pseudoclasses */
@@ -271,13 +310,13 @@ hr {
 
 .all-contact {
     background-color: #303036;
-    height: 400px auto;
-    margin-top: 4%;
+    height: 75vh;
+    width: 100vw;
+    margin-top: 6rem;
     opacity: 0.8;
     transition: 1s ease;
-    margin-left: 15%;
-    margin-right: 15%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 
 }
 
@@ -290,7 +329,8 @@ hr {
     display: flex;
     flex-direction: column;
     margin-right: 2rem;
-    align-items: center;}
+    align-items: center;
+}
 
 .input {
     background-color: transparent;
@@ -340,14 +380,15 @@ background-color: #35605a;
 .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 5rem;
-    margin-top: 2rem;
+    align-items:center;
+    width: 100vw;
+    height: 10vh;
+    padding: 3%;
 }
 
 .footer .copyright {
     color: #35605a;
-    padding: 0rem 2.5rem;
+    padding: 0rem 1rem;
 }
 
 .fa-brands {
