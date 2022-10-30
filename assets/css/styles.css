@@ -541,28 +541,6 @@ background-color: #35605a;
     .all-about h2, #projects  {
         font-size: 2.5rem;
     }
-
-    /* #all-projects {
-        display: grid;
-        grid-template-rows: 30.7rem 80vw 17.2rem 60vw 17.2rem 60vw;
-        row-gap: 100px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'project-info-one' 
-        'project-img-one'
-        'project-info-two'
-        'project-img-two' 
-        'project-info-three' 
-        'project-img-three';
-    }
-
-    .all-projects .project-img-right {
-        margin-right: 0px; 
-    }
-
-    .all-projects .project-img-left {
-        margin-left: 0px;
-    } */
     
     #contact {
         font-size: 2.5rem;
