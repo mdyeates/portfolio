@@ -455,10 +455,6 @@ background-color: #35605a;
         font-size: 100%;
     }
 
-    .main-content .all-about .about .photo  {
-        height: 380px;
-    }
-
     .all-about h2, #projects  {
         font-size: 2.5rem;
     }
@@ -485,14 +481,6 @@ background-color: #35605a;
         margin-left: 0px;
     }
     
-    #contact {
-        font-size: 2.5rem;
-    }
-
-    .contact-description {
-        font-size: 0.7rem;
-        /* text-align: center; */
-     }
 }
 
 @media (max-width: 663px) {
@@ -504,38 +492,57 @@ background-color: #35605a;
     .name-position h1 {
     font-size: 80%;
         }
-    
-    .main-content .all-about .about .photo  {
-            height: 300px;
-        }
-
 }
 
-@media (max-width: 560px) {
-    
+@media (max-width:530px) {
     .name-position h1 {
-        font-size: 60%;
-        }
-    
-    .main-content .all-about .about .photo  {
-            height: 200px;
-        }
+        font-size: 70%;
+    }
 }
-
-@media (max-width: 507px) {
-    .copyright {
-        font-size: 80%;
-        text-align: center;
-    }
-
-    }
 
 /* Phone */
 @media (max-width: 425px) {
-    
+
+    .name-position h1 {
+        font-size: 54%;
+    }
+
+    .main-content h2 {
+        font-size: 1rem;
+    }
+
+    .all-projects .project-info-left {
+        margin-left: 0;
+    }
+
+    .all-projects .project-info-right {
+        margin-right: 0;
+    }
+
+    .main-content .all-about .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .all-about .about .text {
+        margin-right: -20px;
+        padding: 0;
+        margin-top: 10vh;
+    }
 
     .main-content .all-about .about .photo  {
-        height: 150px;
+        height: 250px;
+        width: 250px;
+        margin-top: 5vh;
+        box-shadow: -20px -20px #303036;
+
+    }
+
+    #all-projects {
+        grid-template-rows: 30vh 50vh 20vh 45vh 20vh 45vh;
+        row-gap: 10vh;
     }
 
     .all-about h2, #projects  {
@@ -546,6 +553,11 @@ background-color: #35605a;
         font-size: 2.5rem;
     }
 
+    .form-contact .input {
+        width: 50vh;
+        
+    }
+
     .contact-description {
         font-size: 0.7rem;
     }
@@ -553,5 +565,22 @@ background-color: #35605a;
     .copyright{
         text-align: center;
         }
+}
 
+@media (max-width: 375px) {
+    .header .all-nav {
+        margin: 0;
+    }
+
+    .all-about .about .text {
+        margin-top: 2vh;
+    }
+
+    #about {
+        font-size: 2.2rem ;
+    }
+
+    h3 {
+    font-size: 10px;
+    }
 }
