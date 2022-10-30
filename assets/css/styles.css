@@ -53,7 +53,6 @@ body {
 
 .all-contact h4 {
     font-size: 4rem;
-    padding-bottom: 3%;
     text-align: center;
     color:#fff;
     padding-top: 5%;
@@ -155,7 +154,7 @@ body {
 }
 
 .main-content .all-about .about .photo {
-    box-shadow: -40px 40px #35605a;
+    box-shadow: -40px 40px #303036;
     opacity: 0.7;
     height:500px;
     transition: 1s ease;
@@ -166,15 +165,12 @@ body {
     display: flex;
     align-items: center;
     padding: 2rem;
-    color: #fff;
-    background-color: #303036;
+    color: #303036;
+    background-color: #fff;
     margin-top: 20px;
     margin-bottom: 80px;
     margin-right: 80px;
-    border-right: 10px solid #35605a;
-    border-top: 10px solid #35605a;
-
-
+    border-right: 1px solid #303036;
 }
 
 /* About Pseudoclass */
@@ -234,15 +230,16 @@ body {
 /* Projects Content */
 
 .all-projects {
-  position:relative;
   padding: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 
 .all-projects .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #fff;
     background-color: #303036;
     padding: 50px;
@@ -250,7 +247,6 @@ body {
     margin-bottom: 80px;
     position: absolute; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-top: 10px solid #35605a;
 }
 
 
@@ -280,12 +276,12 @@ body {
 }
 
 .all-projects .project-img-right {
-    box-shadow: 40px 40px #35605a;
+    box-shadow: 40px 40px #303036;
     margin-right: 80px;
 }
 
 .all-projects .project-img-left {
-    box-shadow: -40px 40px #35605a;
+    box-shadow: -40px 40px #303036;
     margin-left: 80px;
    
 }
@@ -316,20 +312,22 @@ body {
     opacity: 0.8;
     transition: 1s ease;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 
 }
 
 .all-contact .contact-description {
     color:#fff;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
 }
 
 .form-contact {
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
-    align-items: center;
+    align-items:center;
 }
 
 .input {
@@ -401,3 +399,172 @@ background-color: #35605a;
     transition: 0.2s;
 }
 
+
+/* || MEDIA QUERIES */
+
+/* Small Laptop */
+
+@media (max-width: 1200px) {
+    .main-content .all-about .about .photo  {
+        height: 440px;
+    }
+
+    .all-about h2, #projects  {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        }
+    
+    #all-projects {
+        row-gap: 150px;
+    }
+
+    .contact-description {
+        font-size: 0.9rem;
+    }
+
+    #contact {
+        font-size: 3rem;
+    }
+    
+    .name-position h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+/* Tablet */
+
+@media (max-width: 940px) {
+    .name-position h1 {
+        font-size: 100%;
+    }
+
+    .main-content .all-about .about .photo  {
+        height: 380px;
+    }
+
+    .all-about h2, #projects  {
+        font-size: 2.5rem;
+    }
+
+    #all-projects {
+        display: grid;
+        grid-template-rows: 225px 50vw 180px 35vw 180px 35vw;
+        row-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'project-info-one' 
+        'project-img-one'
+        'project-info-two'
+        'project-img-two' 
+        'project-info-three' 
+        'project-img-three';
+    }
+
+    .all-projects .project-img-right {
+        margin-right: 0px; 
+    }
+
+    .all-projects .project-img-left {
+        margin-left: 0px;
+    }
+    
+    #contact {
+        font-size: 2.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.7rem;
+        /* text-align: center; */
+     }
+}
+
+@media (max-width: 663px) {
+
+    .mobile-text {
+        display:none;
+
+    a {
+    font-size: 0.7rem;
+    }
+    .name-position h1 {
+    font-size: 80%;
+        }
+    
+    .main-content .all-about .about .photo  {
+            height: 300px;
+        }
+
+}
+
+@media (max-width: 560px) {
+    
+
+
+    .name-position h1 {
+        font-size: 60%;
+        }
+    
+    .main-content .all-about .about .photo  {
+            height: 200px;
+        }
+}
+
+@media (max-width: 507px) {
+    .copyright {
+        font-size: 80%;
+        text-align: center;
+    }
+
+    }
+
+/* Phone */
+@media (max-width: 425px) {
+    
+
+    .main-content .all-about .about .photo  {
+        height: 150px;
+    }
+
+    .all-about h2, #projects  {
+        font-size: 2.5rem;
+    }
+
+    #all-projects {
+        display: grid;
+        grid-template-rows: 30.7rem 80vw 180px 35vw 180px 35vw;
+        row-gap: 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'project-info-one' 
+        'project-img-one'
+        'project-info-two'
+        'project-img-two' 
+        'project-info-three' 
+        'project-img-three';
+    }
+
+    .all-projects .project-img-right {
+        margin-right: 0px; 
+    }
+
+    .all-projects .project-img-left {
+        margin-left: 0px;
+    }
+    
+    #contact {
+        font-size: 2.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.7rem;
+    }
+
+    .copyright{
+        text-align: center;
+        }
+
+}
