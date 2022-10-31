@@ -315,7 +315,6 @@ body {
     color: #35605a;
 }
 
-
 /* PSEUDO EFFECTS */
 /* Header Pseudo */
 
@@ -516,8 +515,6 @@ body {
     #all-projects {
         grid-template-rows: 35vw 45vw 35vw 35vw 35vw 35vw;
     }
-
-
 }
 
 @media (max-width: 630px) {
