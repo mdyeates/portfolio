@@ -242,7 +242,6 @@ body {
 .all-projects .project-info {
     color: #fff;
     background-color: #303036;
-    /* padding: 50px; */
     position: absolute; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
