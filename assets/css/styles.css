@@ -592,15 +592,31 @@ background-color: #35605a;
     .copyright{
         text-align: center;
         }
+
+    .footer .fa-brands {
+        font-size: 1.5rem;
+        padding: 5px;
+        
+    
+        }
 }
 
 @media (max-width: 390px) {
+    .header {
+        padding: 0;    
+}
+
     .form-contact .input {
         width: 30vh;
     
 }
 
 @media (max-width: 375px) {
+    
+    .name-position h1 {
+        font-size: 40%;
+    }
+    
     .header .all-nav {
         margin: 0;
     }
