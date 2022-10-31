@@ -84,8 +84,8 @@ body {
     padding: 0.8rem;
 }
 
-
 /* || NAME HERO */
+
 .name-position {
     font-size: 2.5rem;
     height: 100%;
@@ -429,7 +429,7 @@ body {
 
 }
 
-/* Tablet */
+/* Smaller screens/tablets */
 
 @media (max-width: 940px) {
     .name-position h1 {
