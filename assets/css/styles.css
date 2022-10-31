@@ -96,6 +96,13 @@ body {
     justify-content: center;
 }
 
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* || MAIN SECTIONS */
 
 .all-about, .all-projects {
@@ -536,11 +543,19 @@ background-color: #35605a;
     #all-projects {
         grid-template-rows: 50vw 60vw 50vw 50vw 50vw 50vw;
     }
+
+    .name-position h1 {
+        font-size: 68%;
+    }
 }
 
 @media (max-width: 458px) {
     #all-projects {
         grid-template-rows: 55vw 65vw 55vw 55vw 55vw 55vw;
+    }
+
+    .name-position h1 {
+        font-size: 62%;
     }
 }
 
@@ -559,13 +574,13 @@ background-color: #35605a;
     .all-projects .project-info-right {
         margin-top: 20px;
     }
-
 }
 
 @media (max-width: 425px) {
 
-    .name-position h1 {
-        font-size: 54%;
+    .name-container {
+        display:block;
+        font-size: 56px;
     }
 
     .main-content h2 {
@@ -615,6 +630,10 @@ background-color: #35605a;
     .header {
         padding: 0;    
 }   
+
+    .name-container {
+        font-size: 54px;
+}
     #all-projects {
          grid-template-rows: 60vw 70vw 60vw 60vw 60vw 60vw;
 }   
@@ -622,8 +641,9 @@ background-color: #35605a;
 
 @media (max-width: 375px) {
     
-    .name-position h1 {
-        font-size: 40%;
+    .name-container {
+        font-size: 50px;
+    }
     }
     
     .header .all-nav {
@@ -649,10 +669,25 @@ background-color: #35605a;
     #all-projects {
         grid-template-rows: 65vw 75vw 65vw 65vw 65vw 65vw;
 }   
-}
 
 @media (max-width: 350px) {
+
+    .name-container {
+        font-size: 44px;
+    }
     
     #all-projects {
         grid-template-rows: 75vw 85vw 75vw 75vw 75vw 75vw;
+}
+}
+
+@media (max-width: 320px) {
+
+    .name-container {
+        font-size: 41px;
+    }
+
+    #all-projects {
+        grid-template-rows: 80vw 90vw 80vw 80vw 80vw 80vw;
+}
 }
