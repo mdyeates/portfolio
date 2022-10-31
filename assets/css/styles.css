@@ -120,27 +120,26 @@ body {
 
 .main-content .all-about .about {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .main-content .all-about .about .photo {
     box-shadow: -40px 40px #303036;
+    margin-bottom: 5rem;
     opacity: 0.7;
     height:500px;
     transition: 1s ease;
-    margin-left: 80px;
 }
 
 .all-about .about .text {
     display: flex;
     align-items: center;
-    padding: 2rem;
     color: #303036;
     background-color: #fff;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    margin-right: 80px;
-    border-right: 1px solid #303036;
+    border-left: 1px solid #303036;
+    padding: 10px 30px;
 }
 
 /* || PROJECTS */
@@ -530,6 +529,11 @@ background-color: #35605a;
     .name-position h1 {
         font-size: 70%;
     }
+
+    .all-about {
+        padding: 20px;
+    }
+
     #all-projects {
         grid-template-rows: 45vw 55vw 45vw 45vw 45vw 45vw;
     }
@@ -583,29 +587,11 @@ background-color: #35605a;
         font-size: 56px;
     }
 
-    .main-content h2 {
-        font-size: 1rem;
-    }
-
-    .main-content .all-about .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .all-about .about .text {
-        margin-right: -20px;
-        padding: 0;
-        margin-top: 10vh;
-    }
-
     .main-content .all-about .about .photo  {
         height: 250px;
         width: 250px;
         margin-top: 5vh;
         box-shadow: -20px -20px #303036;
-
     }
 
     #contact {
