@@ -1,3 +1,10 @@
+/* || VARIABLES */
+:root {
+    --primary: #fff;
+    --secondary: #35605a;
+    --third: #303036; 
+}
+
 /* || RESETS */
 
 * {
@@ -22,13 +29,13 @@ body {
 /* || GENERAL STYLES */
 
 .my {
-    color: #35605a;
+    color: var(--secondary);
 }
 
 /* || HEADER STYLES */
 
 .name-position h1 {
-    color: #303036;
+    color: var(--third);
     padding: 1.5rem;
 }
 
@@ -36,19 +43,19 @@ body {
     font-size: 4rem;
     padding-bottom: 3%;
     text-align: center;
-    color: #303036;
+    color: var(--third);
 }
 
 .all-projects .project-info h3 {
     margin-bottom: 1rem;
     font-size: 2.0rem;
-    color: #fff;
+    color: var(--primary);
 }
 
 .all-contact h4 {
     font-size: 4rem;
     text-align: center;
-    color: #fff;
+    color: var(--primary);
     padding-top: 5%;
 }
 
@@ -58,7 +65,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--primary);
     width: 100%;
     padding: 2rem;
     height: 3rem;
@@ -116,7 +123,7 @@ body {
 /* About */
 
 .all-about {
-    background-color: #fff;
+    background-color: var(--primary);
 }
 
 .main-content .all-about .about {
@@ -127,7 +134,7 @@ body {
 }
 
 .main-content .all-about .about .photo {
-    box-shadow: -40px 40px #303036;
+    box-shadow: -40px 40px var(--third);
     margin-bottom: 5rem;
     opacity: 0.7;
     height: 500px;
@@ -137,9 +144,9 @@ body {
 .all-about .about .text {
     display: flex;
     align-items: center;
-    color: #303036;
-    background-color: #fff;
-    border-left: 1px solid #303036;
+    color: var(--third);
+    background-color: var(--primary);
+    border-left: 1px solid var(--third);
     padding: 10px 30px;
 }
 
@@ -194,8 +201,8 @@ body {
 
 
 .all-projects .project-info {
-    color: #fff;
-    background-color: #303036;
+    color: var(--primary);
+    background-color: var(--third);
     z-index: 1;
     height: fit-content
 }
@@ -203,20 +210,20 @@ body {
 .all-projects .project-info h3 {
     padding-top: 30px;
     padding-left: 30px;
-    background-color: #303036;
+    background-color: var(--third);
 }
 
 .all-projects .project-info .project-text {
     padding: 0 30px 30px 30px;
-    background-color: #303036;
+    background-color: var(--third);
 }
 
 .all-projects .project-info-right {
-    border-right: 10px solid #35605a;
+    border-right: 10px solid var(--secondary);
 }
 
 .all-projects .project-info-left {
-    border-left: 10px solid #35605a;
+    border-left: 10px solid var(--secondary);
 }
 
 .all-projects .project-img {
@@ -228,17 +235,17 @@ body {
 }
 
 .all-projects .project-img-right {
-    box-shadow: 40px 40px #303036;
+    box-shadow: 40px 40px var(--third);
 }
 
 .all-projects .project-img-left {
-    box-shadow: -40px 40px #303036;
+    box-shadow: -40px 40px var(--third);
 }
 
 /* || CONTACT */
 
 .all-contact {
-    background-color: #303036;
+    background-color: var(--third);
     height: 75vh;
     width: 100vw;
     margin-top: 6rem;
@@ -251,7 +258,7 @@ body {
 }
 
 .all-contact .contact-description {
-    color: #fff;
+    color: var(--primary);
     padding: 1rem 5rem;
     text-align: center;
 }
@@ -265,13 +272,13 @@ body {
 .all-contact .form-contact .input {
     background-color: transparent;
     outline: none;
-    border: #35605a 1px solid;
-    color: #fff;
+    border: var(--secondary) 1px solid;
+    color: var(--primary);
     font-size: 1rem;
     width: 450px;
     padding: 1rem;
     margin: 0.5rem;
-    border-color: #fff;
+    border-color: var(--primary);
 }
 
 .all-contact .form-contact .message {
@@ -281,8 +288,8 @@ body {
 
 .all-contact .form-contact .button {
     font-size: 1.3rem;
-    background-color: #303036;
-    color: #fff;
+    background-color: var(--third);
+    color: var(--primary);
     border-style: none;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -290,7 +297,7 @@ body {
 }
 
 .all-contact .form-contact ::placeholder {
-    color: #fff;
+    color: var(--primary);
     font-size: 1rem;
 }
 
@@ -306,13 +313,13 @@ body {
 }
 
 .footer .copyright {
-    color: #35605a;
+    color: var(--secondary);
     padding: 0rem 1rem;
 }
 
 .footer .fa-brands {
     padding: 0rem 1.5rem;
-    color: #35605a;
+    color: var(--secondary);
 }
 
 /* PSEUDO EFFECTS */
@@ -320,7 +327,7 @@ body {
 
 .header:after {
     content: "";
-    background: #35605a;
+    background: var(--secondary);
     position: absolute;
     bottom: 0;
     left: 5%;
@@ -334,17 +341,17 @@ body {
 }
 
 .header .all-nav a:hover {
-    color: #303036;
+    color: var(--third);
     transition: 0.3s;
     font-weight: bolder;
 }
 
 .header a:visited {
-    color: #35605a;
+    color: var(--secondary);
 }
 
 .header a:link {
-    color: #35605a;
+    color: var(--secondary);
 }
 
 /* About Pseudo */
@@ -352,7 +359,6 @@ body {
 .main-content .all-about .about .photo:hover {
     opacity: 1;
     transition: 1s ease;
-    box-shadow: -50px 50px #35605a;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -361,14 +367,12 @@ body {
 .all-projects .project-img-right:hover {
     opacity: 1;
     transition: 1s ease;
-    box-shadow: 40px 40px #35605a;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .all-projects .project-img-left:hover {
     opacity: 1;
     transition: 1s ease;
-    box-shadow: -40px 40px #35605a;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -381,7 +385,7 @@ body {
 }
 
 .all-contact .form-contact .input:focus {
-    background-color: #35605a;
+    background-color: var(--secondary);
 }
 
 .all-contact .form-contact .button:hover {
@@ -479,7 +483,7 @@ body {
     }
 
     .all-projects .project-info {
-        border-top: 10px solid #35605a;
+        border-top: 10px solid var(--secondary);
     }
 
     .all-projects .project-info-left {
@@ -493,7 +497,7 @@ body {
 
     .all-projects .project-img {
         box-shadow: none;
-        border-bottom: 10px solid #303036;
+        border-bottom: 10px solid var(--third);
         margin-top: -65px;
     }
 
@@ -600,7 +604,7 @@ body {
         height: 250px;
         width: 250px;
         margin-top: 5vh;
-        box-shadow: -20px -20px #303036;
+        box-shadow: -20px -20px var(--third);
     }
 
     #contact {
