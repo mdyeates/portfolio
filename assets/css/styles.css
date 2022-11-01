@@ -2,7 +2,7 @@
 :root {
     --primary: #fff;
     --secondary: #35605a;
-    --third: #303036; 
+    --third: #303036;
 }
 
 /* || RESETS */
@@ -33,7 +33,7 @@ body {
     color: var(--secondary);
 }
 
-/* || HEADER STYLES */
+/* || HEADING STYLES */
 
 .name-position h1 {
     color: var(--third);
@@ -403,12 +403,17 @@ body {
 /* || MEDIA QUERIES */
 
 @media (max-width: 1200px) {
-    .main-content .all-about .about .photo {
-        height: 440px;
+
+    .name-position h1 {
+        font-size: 3rem;
     }
 
     .main-content h2 {
         font-size: 4rem;
+    }
+
+    .main-content .all-about .about .photo {
+        height: 440px;
     }
 
     .text {
@@ -426,16 +431,12 @@ body {
     #contact {
         font-size: 3rem;
     }
-
-    .name-position h1 {
-        font-size: 3rem;
-    }
-
 }
 
 /* Smaller screens/tablets */
 
 @media (max-width: 940px) {
+
     .name-position h1 {
         font-size: 100%;
     }
@@ -534,6 +535,7 @@ body {
 }
 
 @media (max-width:530px) {
+
     .name-position h1 {
         font-size: 70%;
     }
@@ -552,16 +554,18 @@ body {
 }
 
 @media (max-width: 490px) {
-    #all-projects {
-        grid-template-rows: 50vw 60vw 50vw 50vw 50vw 50vw;
-    }
 
     .name-position h1 {
         font-size: 68%;
     }
+
+    #all-projects {
+        grid-template-rows: 50vw 60vw 50vw 50vw 50vw 50vw;
+    }
 }
 
 @media (max-width: 458px) {
+
     #all-projects {
         grid-template-rows: 55vw 65vw 55vw 55vw 55vw 55vw;
     }
@@ -578,6 +582,7 @@ body {
         grid-template-rows: 55vw 65vw 55vw 55vw 55vw 55vw;
         padding: 0;
     }
+
     .all-projects :nth-child(1) {
         margin-top: 2%;
     }
@@ -628,6 +633,7 @@ body {
 }
 
 @media (max-width: 390px) {
+
     .header {
         padding: 0;
     }
@@ -659,12 +665,12 @@ body {
         font-size: 10px;
     }
 
-    .all-contact .form-contact .input {
-        width: 15rem;
-    }
-
     #all-projects {
         grid-template-rows: 65vw 75vw 65vw 65vw 65vw 65vw;
+    }
+
+    .all-contact .form-contact .input {
+        width: 15rem;
     }
 }
 
