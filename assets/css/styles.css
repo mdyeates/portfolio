@@ -41,7 +41,6 @@ body {
 
 .main-content h2 {
     font-size: 4rem;
-    padding-bottom: 3%;
     text-align: center;
     color: var(--third);
 }
@@ -407,9 +406,8 @@ body {
         height: 440px;
     }
 
-    .all-about h2,
-    #projects {
-        font-size: 3rem;
+    .main-content h2 {
+        font-size: 4rem;
     }
 
     .text {
@@ -441,8 +439,7 @@ body {
         font-size: 100%;
     }
 
-    .all-about h2,
-    #projects {
+    .main-content h2 {
         font-size: 2.5rem;
     }
 
@@ -580,6 +577,9 @@ body {
         grid-template-rows: 55vw 65vw 55vw 55vw 55vw 55vw;
         padding: 0;
     }
+    .all-projects :nth-child(1) {
+        margin-top: 2%;
+    }
 
     .all-projects :nth-child(5) {
         margin-top: 20px;
@@ -650,8 +650,8 @@ body {
         margin: 0;
     }
 
-    #about {
-        font-size: 2.2rem;
+    .main-content h2 {
+        font-size: 2rem;
     }
 
     h3 {

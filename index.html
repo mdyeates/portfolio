@@ -30,23 +30,25 @@
     </header>
 
     <!-- HERO TITLE PAGE -->
-    <section id="home" class="name-position">
-        <div class="name-container">
+    <div id="home" class="name-position">
+        <section class="name-container">
             <h1>
                 Hi, I'm <strong class="my">Michael</strong>.
             </h1>
             <h1>I am a Frontend Web Developer.
             </h1>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <main class="main-content">
 
         <!-- ABOUT -->
-        <section class="all-about">
-            <h2 id="about"><strong class="my">My</strong> Story.</h2>
-            <div class="about">
-                <img class="photo" src="./assets/images/thumbnail_IMG_0056.jpeg" alt="A photograph of me by the seaside">
+
+        <h2 id="about"><strong class="my">My</strong> Story.</h2>
+        <div class="all-about">
+            <article class="about">
+                <img class="photo" src="./assets/images/thumbnail_IMG_0056.jpeg"
+                    alt="A photograph of me by the seaside">
                 <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab omnis soluta, adipisci
                     expedita sunt, perspiciatis laudantium, earum sequi dolorum ipsam rerum aperiam quisquam voluptas
                     illum recusandae. Deserunt accusantium nam animi. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -56,13 +58,12 @@
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil neque quidem
                     repellat perspiciatis. Illo harum quo error necessitatibus distinctio nam quas repellat facilis nemo
                     tenetur dolor numquam, sunt id.</p>
-            </div>
-        </section>
+            </article>
+        </div>
 
         <!-- PROJECTS -->
         <h2 id="projects"><strong class="my">My</strong> Projects.</h2>
-        <section id="all-projects" class="all-projects">
-
+        <div id="all-projects" class="all-projects">
             <article id="project-info-one" class="project-info project-info-left">
                 <h3>Main Project Title</h3>
                 <p class="text project-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque illo
@@ -72,7 +73,6 @@
                     quae, commodi vitae! Delectus, in nihil explicabo labore inventore odio beatae ad a nulla tempora
                     aperiam voluptates.</p>
                 <p class="text project-text"><em>HTML, CSS etc</em></p>
-
             </article>
 
             <a href="https://github.com/mdyeates" id="project-img-one" class="project-img project-img-right"></a>
@@ -97,22 +97,19 @@
                 <p class="text project-text"><em>HTML, CSS etc</em></p>
             </article>
             <a href="https://github.com/mdyeates" id="project-img-three" class="project-img project-img-right"></a>
-
-        </section>
+        </div>
 
         <!-- CONTACT FORM -->
         <section class="all-contact">
-
             <h4 class="contact-header" id="contact">Get In <strong>Touch</strong>.</h4>
-            <p class="contact-description"></p>
-
-            <form class="form-contact" action="mailto:michael-yeates@outlook.com?subject=Enquiry" method="post" enctype="text/plain">
+            <p class="contact-description">Please leave your details below if you would like to discuss anything</p>
+            <form class="form-contact" action="mailto:michael-yeates@outlook.com?subject=Enquiry" method="post"
+                enctype="text/plain">
                 <input class="input" type="text" name="name" placeholder="Name" required>
                 <input class="input" type="email" name="email" placeholder="Email" required>
                 <textarea class="input message" name="message" placeholder="Message"></textarea>
                 <button class="button" type="submit" value="Send">Send</button>
             </form>
-
         </section>
     </main>
 
