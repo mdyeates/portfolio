@@ -25,6 +25,7 @@ Users can access this website from a variety of devices. In order to ensure that
 
 ![Mobile](assets/images/mobilelayout2.png)
 ![Tablet](assets/images/tabletlayout1.png)
+![Gif](assets/images/Michael%20Yeates%20(1).gif)
 
 ## Credits and Resources
 
