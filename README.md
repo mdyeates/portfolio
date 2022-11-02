@@ -27,7 +27,7 @@ N/A
 
 Users can access this website from a variety of devices. In order to ensure that the layout is compatible with smaller devices such as smartphones and tablets, I have used media queries. 
 
-Below you can see my website on a website, mobile and a tablet:
+Below you can see my website on a computer, mobile and a tablet:
 
 ![Gif](assets/images/Michael%20Yeates%20(1).gif)
 ![Mobile](assets/images/mobilelayout2.png)
