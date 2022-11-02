@@ -1,7 +1,11 @@
 # Portfolio
 ## Description
 
-A website development portfolio I created for a bootcamp assignment using HTML and CSS. The various sections use both flexbox and grid. I will replace the placeholder images and text once I have developed some applications to talk about. 
+To showcase my skills and talents to potential employers, I have built this portfolio website. In this portfolio, I will highlight my strongest projects as well as the thought processes that went into them. At the moment, it has placeholder images and text that I will replace once I have completed the projects I wish to showcase. 
+
+In order to complete this project, I used recent skills I learned about Flexbox, Grid, and Media Queries. I implemented hover animations in the navigation bar, my project image tiles, the contact form, and the footer. To improve user experience, I added smooth scrolling when the navigation links are clicked.
+
+Summary:
 
 * This page presents my name, a photo and links to sections about me, my work and a contact form
 * As the links are clicked, the UI scrolls smoothly to the corresponding section
@@ -23,9 +27,12 @@ N/A
 
 Users can access this website from a variety of devices. In order to ensure that the layout is compatible with smaller devices such as smartphones and tablets, I have used media queries. 
 
+Below you can see my website on a website, mobile and a tablet:
+
+![Gif](assets/images/Michael%20Yeates%20(1).gif)
 ![Mobile](assets/images/mobilelayout2.png)
 ![Tablet](assets/images/tabletlayout1.png)
-![Gif](assets/images/Michael%20Yeates%20(1).gif)
+
 
 ## Credits and Resources
 
