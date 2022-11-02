@@ -1,10 +1,88 @@
 /* || VARIABLES */
+
 :root {
     --primary: #fff;
     --secondary: #35605a;
     --third: #303036;
 }
 
+/* || ANIMATION STYLES */
+
+/* Header Pseudo */
+
+.header:after {
+    content: "";
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 1px;
+    width: 90%;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.header .all-nav a:hover {
+    color: var(--third);
+    transition: 0.3s;
+    font-weight: bolder;
+}
+
+.header a:visited {
+    color: var(--secondary);
+}
+
+.header a:link {
+    color: var(--secondary);
+}
+
+/* About */
+
+.main-content .all-about .about .photo:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Projects */
+
+.all-projects .project-img-right:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.all-projects .project-img-left:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Contact */
+
+.all-contact:hover {
+    opacity: 1;
+    transition: 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.all-contact .form-contact .input:focus {
+    background-color: var(--secondary);
+}
+
+.all-contact .form-contact .button:hover {
+    color: #0ea490;
+}
+
+/* Footer */
+
+.footer .fa-brands:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 
 /* || RESETS */
 
@@ -28,13 +106,16 @@ body {
     background-color: var(--primary);
 }
 
-/* || GENERAL STYLES */
-
-.my {
-    color: var(--secondary);
+/* || GLOBAL STYLES */
+.all-about,
+.all-projects {
+    padding: 0 100px;
+    margin-bottom: 4rem;
 }
 
-/* || HEADING STYLES */
+/* || CUSTOM STYLES */
+
+/* Heading */
 
 .name-position h1 {
     color: var(--third);
@@ -61,7 +142,11 @@ h2 {
     padding-top: 5%;
 }
 
-/* || HEADER & NAVIGATION */
+.my {
+    color: var(--secondary);
+}
+
+/* || Header & Navigation */
 
 .header {
     display: flex;
@@ -93,7 +178,7 @@ h2 {
     padding: 0.8rem;
 }
 
-/* || NAME HERO */
+/* Hero/Name */
 
 .name-position {
     font-size: 2.5rem;
@@ -111,14 +196,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* || MAIN SECTIONS */
-
-.all-about,
-.all-projects {
-    padding: 0 100px;
-    margin-bottom: 4rem;
 }
 
 /* About */
@@ -151,9 +228,7 @@ h2 {
     padding: 10px 30px;
 }
 
-/* || PROJECTS */
-
-/* Projects Grid */
+/* Projects GRID */
 
 #all-projects {
     display: grid;
@@ -237,7 +312,7 @@ h2 {
     box-shadow: -40px 40px var(--third);
 }
 
-/* || CONTACT */
+/* Contact */
 
 .all-contact {
     background-color: var(--third);
@@ -295,7 +370,7 @@ h2 {
     font-size: 1rem;
 }
 
-/* || FOOTER */
+/* Footer */
 
 .footer {
     display: flex;
@@ -313,83 +388,6 @@ h2 {
 .footer .fa-brands {
     padding: 0rem 1.5rem;
     color: var(--secondary);
-}
-
-/* PSEUDO EFFECTS */
-/* Header Pseudo */
-
-.header:after {
-    content: "";
-    background: var(--secondary);
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    height: 1px;
-    width: 90%;
-}
-
-.header .logo img:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
-}
-
-.header .all-nav a:hover {
-    color: var(--third);
-    transition: 0.3s;
-    font-weight: bolder;
-}
-
-.header a:visited {
-    color: var(--secondary);
-}
-
-.header a:link {
-    color: var(--secondary);
-}
-
-/* About Pseudo */
-
-.main-content .all-about .about .photo:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-/* Projects Pseudo */
-
-.all-projects .project-img-right:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.all-projects .project-img-left:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-/* Contact Pseudo */
-
-.all-contact:hover {
-    opacity: 1;
-    transition: 1s ease;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.all-contact .form-contact .input:focus {
-    background-color: var(--secondary);
-}
-
-.all-contact .form-contact .button:hover {
-    color: #0ea490;
-}
-
-/* Footer Pseudo */
-
-.footer .fa-brands:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
 }
 
 /* || MEDIA QUERIES */
