@@ -133,6 +133,10 @@ h2 {
     margin-bottom: 1rem;
     font-size: 2.0rem;
     color: var(--primary);
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: var(--third);
+    
 }
 
 .all-contact h4 {
@@ -268,12 +272,6 @@ h2 {
     background-color: var(--third);
     z-index: 1;
     height: fit-content
-}
-
-.all-projects .project-info h3 {
-    padding-top: 30px;
-    padding-left: 30px;
-    background-color: var(--third);
 }
 
 .all-projects .project-info .project-text {
