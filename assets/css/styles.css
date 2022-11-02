@@ -41,7 +41,7 @@
 
 /* About */
 
-.main-content .all-about .about .photo:hover {
+.main-content .all-about .photo:hover {
     opacity: 1;
     transition: 1s ease;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -191,27 +191,20 @@ h2 {
     background-color: var(--primary);
 }
 
-.name-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /* About */
 
 .all-about {
     background-color: var(--primary);
 }
 
-.main-content .all-about .about {
+.main-content .all-about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main-content .all-about .about .photo {
+.main-content .all-about .photo {
     box-shadow: -40px 40px var(--third);
     margin-bottom: 5rem;
     opacity: 0.7;
@@ -219,7 +212,7 @@ h2 {
     transition: 1s ease;
 }
 
-.all-about .about .text {
+.all-about .text {
     display: flex;
     align-items: center;
     color: var(--third);
@@ -402,7 +395,7 @@ h2 {
         font-size: 4rem;
     }
 
-    .main-content .all-about .about .photo {
+    .main-content .all-about .photo {
         height: 440px;
     }
 
@@ -513,7 +506,7 @@ h2 {
 
 @media (max-width: 630px) {
 
-    .main-content .all-about .about .photo {
+    .main-content .all-about .photo {
         height: 250px;
     }
 }
@@ -592,12 +585,12 @@ h2 {
 
 @media (max-width: 425px) {
 
-    .name-container {
+    .name-position {
         display: block;
         font-size: 56px;
     }
 
-    .main-content .all-about .about .photo {
+    .main-content .all-about .photo {
         height: 250px;
         width: 250px;
         margin-top: 5vh;
@@ -628,7 +621,7 @@ h2 {
         padding: 0;
     }
 
-    .name-container {
+    .name-position {
         font-size: 54px;
     }
 
@@ -639,7 +632,7 @@ h2 {
 
 @media (max-width: 375px) {
 
-    .name-container {
+    .name-position {
         font-size: 50px;
     }
 
@@ -667,7 +660,7 @@ h2 {
 
 @media (max-width: 350px) {
 
-    .name-container {
+    .name-position {
         font-size: 44px;
     }
 
@@ -678,7 +671,7 @@ h2 {
 
 @media (max-width: 320px) {
 
-    .name-container {
+    .name-position {
         font-size: 41px;
     }
 
