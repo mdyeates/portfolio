@@ -6,19 +6,9 @@
     --third: #303036;
 }
 
-/* || ANIMATION STYLES */
+/* || TRANSITIONS/ANIMATIONS */
 
-/* Header Pseudo */
-
-.header:after {
-    content: "";
-    background: var(--secondary);
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    height: 1px;
-    width: 90%;
-}
+/* Header */
 
 .header .logo img:hover {
     transform: scale(1.2);
@@ -113,6 +103,10 @@ body {
     margin-bottom: 4rem;
 }
 
+.my {
+    color: var(--secondary);
+}
+
 /* || CUSTOM STYLES */
 
 /* Heading */
@@ -120,6 +114,16 @@ body {
 .name-position h1 {
     color: var(--third);
     padding: 1.5rem;
+}
+
+.header:after {
+    content: "";
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 1px;
+    width: 90%;
 }
 
 h2 {
@@ -144,10 +148,6 @@ h2 {
     text-align: center;
     color: var(--primary);
     padding-top: 5%;
-}
-
-.my {
-    color: var(--secondary);
 }
 
 /* || Header & Navigation */
