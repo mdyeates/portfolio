@@ -40,10 +40,11 @@ body {
     padding: 1.5rem;
 }
 
-.main-content h2 {
+h2 {
     font-size: 4rem;
     text-align: center;
     color: var(--third);
+    margin-bottom: 50px;
 }
 
 .all-projects .project-info h3 {
@@ -117,7 +118,7 @@ body {
 .all-projects {
     min-height: 100vh;
     min-width: 100vw;
-    padding: 100px;
+    padding: 0 100px;
     margin-bottom: 4rem;
 }
 
@@ -194,12 +195,6 @@ body {
 }
 
 /* Projects Content */
-
-.all-projects {
-    padding: 50px;
-    position: relative;
-}
-
 
 .all-projects .project-info {
     color: var(--primary);
