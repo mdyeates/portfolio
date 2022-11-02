@@ -5,6 +5,7 @@
     --third: #303036;
 }
 
+
 /* || RESETS */
 
 * {
@@ -116,8 +117,6 @@ h2 {
 
 .all-about,
 .all-projects {
-    min-height: 100vh;
-    min-width: 100vw;
     padding: 0 100px;
     margin-bottom: 4rem;
 }
@@ -243,9 +242,8 @@ h2 {
 .all-contact {
     background-color: var(--third);
     height: 75vh;
-    width: 100vw;
     margin-top: 6rem;
-    opacity: 0.8;
+    opacity: 0.6;
     transition: 1s ease;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
@@ -303,7 +301,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 10vh;
     padding: 3%;
 }
