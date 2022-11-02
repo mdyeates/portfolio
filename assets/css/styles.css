@@ -393,6 +393,10 @@ h2 {
         font-size: 4rem;
     }
 
+    .all-contact h4 {
+        font-size: 3rem;
+    }
+
     .main-content .all-about .photo {
         height: 440px;
     }
@@ -401,16 +405,12 @@ h2 {
         font-size: 0.8rem;
     }
 
-    #all-projects {
+    .all-projects {
         row-gap: 150px;
     }
 
     .contact-description {
         font-size: 0.9rem;
-    }
-
-    #contact {
-        font-size: 3rem;
     }
 }
 
@@ -583,9 +583,9 @@ h2 {
 
 @media (max-width: 425px) {
 
-    .name-position {
-        display: block;
+    .name-position h1 {
         font-size: 56px;
+        text-align: left;
     }
 
     .main-content .all-about .photo {
@@ -595,7 +595,7 @@ h2 {
         box-shadow: -20px -20px var(--third);
     }
 
-    #contact {
+    .all-contact h4 {
         font-size: 2.5rem;
     }
 
