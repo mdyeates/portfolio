@@ -10,6 +10,17 @@
 
 /* Header */
 
+@keyframes nameEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale (1.0);
+    }
+}
+
 .header .logo img:hover {
     transform: scale(1.2);
     transition: 0.2s;
@@ -114,16 +125,7 @@ body {
 .name-position h1 {
     color: var(--third);
     padding: 1.5rem;
-}
-
-.header:after {
-    content: "";
-    background: var(--secondary);
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    height: 1px;
-    width: 90%;
+    animation: nameEntrance 1.75s ease-in-out;
 }
 
 h2 {
@@ -165,6 +167,16 @@ h2 {
     z-index: 2;
 }
 
+.header:after {
+    content: "";
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 1px;
+    width: 90%;
+}
+
 .header .logo {
     margin-left: 5%;
 }
@@ -193,6 +205,11 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: var(--primary);
+}
+
+.name-position .my {
+    animation: nameEntrance 3s ease-in-out;
+    animation-delay: 100ms;
 }
 
 /* About */
